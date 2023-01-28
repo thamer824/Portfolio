@@ -40,6 +40,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
               
             </Col>
             
+            
            
           </Row>
         </div>

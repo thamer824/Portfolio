@@ -4,6 +4,8 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -13,7 +15,13 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
   const period = 2000;
-
+  const toastObjetct = {
+    position: "top-right",
+    autoClose: 8000,
+    pauseOnHover: true,
+    draggable: true,
+    theme: "dark"
+  };
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -59,7 +67,9 @@ export const Banner = () => {
                 <h1>{`Hi! I'm Thamer`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "DevOps Developer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Software engineering student at South Mediterranean University, with a track record of
 creating robust projects in programming and a great capacity for analysis.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <button  onClick={() => toast("Email Me In Contact Page ", toastObjetct)}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                 
+                  <ToastContainer />
               </div>}
             </TrackVisibility>
           </Col>

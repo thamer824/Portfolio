@@ -56,6 +56,14 @@ h1, h2, h3, h4, h5, h6 {
       transition:0.9s ease-in-out;
       text-decoration: none;
 }
+.aze{
+  border-radius: 30px;
+}
+.ta{
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 5px;
+}
 .nI:hover {
   background-color:#440d53;
    color: #ffffff;
@@ -70,6 +78,87 @@ h1, h2, h3, h4, h5, h6 {
    transition:0.9s ease-in-out;
    text-decoration: none;
 }
+.git{
+  padding-top: 0.7rem;
+  width: 120px; 
+}
+.hava{
+  
+ position: relative;
+  display:block;  
+  z-index:999;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+}
+.hava:hover {
+    transform: scale(1.5);
+    z-index:-1;
+}
+.h{
+ 
+  font-family: sans-serif;
+  font-size: 1em;
+  text-shadow: 0 2px 5px;
+  text-transform: uppercase;
+
+}
+ .h span{
+position: relative;
+display: inline-block;
+
+}
+.h span:nth-child(4){
+  color: white;
+  animation: animate 2s alternate infinite;
+  
+  }
+
+  @keyframes animate {
+    0%
+    {
+      transform: translateY(0px) rotateY(0deg)
+    }
+    40%
+    {
+      transform: translateY(0px) rotateY(0deg) 
+    }
+    50%
+    {
+      transform: translateY(-100px)rotateY(180deg)
+    }
+    60%
+    {
+      transform: translateY(0px) rotateY(360deg) 
+    }
+    100%
+    {
+      transform: translateY(0px) rotateY(360deg) 
+    }
+  }
+  .h span{
+    animation: animate 3s alternate infinite;
+  }
+  .h span:nth-child(1){
+    animation-delay: 0s;
+  }
+  .h span:nth-child(2){
+    animation-delay: 0.2s;
+  }
+  .h span:nth-child(3){
+    animation-delay: 0.6s;
+  }
+  .h span:nth-child(5){
+    animation-delay: 0.1s;
+  }
+  .h span:nth-child(6){
+    animation-delay: 0.5s;
+  }
+  .h span:nth-child(7){
+    animation-delay: 0.3s;
+  }
+
 
 .ne {
   background-color:#997af0;
@@ -83,6 +172,7 @@ h1, h2, h3, h4, h5, h6 {
       text-transform: uppercase;
       transition:0.9s ease-in-out;
       text-decoration: none;
+      margin-left:420px;
 }
 .ne:hover {
       background-color:#121212;
@@ -116,6 +206,9 @@ button {
   border: 0;
   background-color: transparent;
 }
+
+
+
 
 input:focus, textarea:focus, select:focus {
   outline: none;
